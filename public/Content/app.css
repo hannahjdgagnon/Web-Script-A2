@@ -1,0 +1,247 @@
+body,
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Background colour*/
+body {
+  background-color: #fdfcf5;
+  font-family: "Montserrat", Arial, sans-serif;
+  color: #555; /* text colour */
+}
+
+/*wrapper */
+#wrapper {
+  margin: 0 auto; /* center wrapper */
+}
+
+/* style home section */
+#home {
+  height: 100vh; /* full viewport height */
+  background-color: #f5ecdc; /* background colour for home section */
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0 30px; /* add padding to the left and right */
+}
+
+/* style the text */
+.text {
+  flex: 1; /* expand to take available space */
+  text-align: left; /* align text to the left */
+}
+
+.text p {
+  font-size: 30px;
+  margin-bottom: 10px; /* add space below the paragraph */
+}
+
+.text h2 {
+  font-size: 75px;
+  margin: 0;
+}
+
+/* style image container */
+.image {
+  flex: 1; /* expand to take available space */
+  display: flex;
+  justify-content: flex-end; /* align image to the right */
+  align-items: center; /* center image vertical */
+  padding-right: 75px;
+}
+
+/* style the image */
+#profile-image {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+section {
+  background-color: #f5ecdc;
+  padding: 30px; /* padding */
+  margin: 8.5px 0; /* spacing between sections */
+  border-radius: 0px; /* round corners of each section idk yet */
+}
+
+/* media section */
+.media-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px; /* spacingg */
+  background-color: #f5ecdc;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+/* video */
+.video-container {
+  flex: 1;
+  padding: 60px; /* spacing between video and photo */
+  order: 1;
+}
+
+/* photo */
+.photo-container {
+  flex: none;
+  padding: 0; /* space between video and photo */
+  image-rendering: crisp-edges;
+  order: 2;
+}
+#about-photo {
+  width: 500px;
+  height: auto;
+  margin-top: 30px;
+}
+/* About Me section */
+.about-me-section {
+  background: linear-gradient(90deg, #efb592, #e4d5a1);
+  padding: 35px; /* padding to the about me section */
+  text-align: left; /* align text to the left */
+}
+
+/*About Me section heading */
+.about-me-section h2 {
+  color: #2e2621;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+/* About Me section text */
+.about-me-section p {
+  font-size: 20px;
+  color: #333;
+  max-width: 800px;
+  margin: 40px 0; /* adjust spacing*/
+  text-align: left;
+}
+
+/*projects section */
+#projects {
+  min-height: 100vh;
+  background-color: #f5ecdc;
+  margin: 10px;
+}
+
+/* project sections */
+.project {
+  background-color: #fffaf8;
+  padding: 20px; /* padding each project */
+  margin: 20px 0; /* spacing between  */
+  border: 1.5px solid #4b453a; /* border to each project */
+  border-radius: 5px; /* round corners of each project */
+}
+
+/* project titles */
+.project h3 {
+  color: #564d4d; /* color for project titles */
+  font-size: 24px;
+  margin: 0;
+}
+
+/* project descriptions */
+.project p {
+  font-size: 18px;
+  color: #555; /* color for project descriptions */
+  margin: 30px 0;
+}
+
+.project-image {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-image img {
+  max-width: 35%; /* image won't exceed container width */
+  height: auto; /* maintain aspect ratio */
+  margin-bottom: 20px; /* add spacing below image */
+  border: 2px solid #583f38;
+}
+
+.project-image a {
+  text-decoration: none;
+  color: #f1b286; /* link colour  */
+  padding-top: 10px;
+}
+
+/* links */
+.project a {
+  color: #78473b; /* link colour */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease; /* color transition */
+}
+
+.project a:hover {
+  color: #b57355; /*  link colour on hover */
+}
+
+/*contact form */
+#contact {
+  height: 100vh;
+  margin: 10px;
+}
+
+form {
+  max-width: 400px; /*maximum width for form */
+  margin: 0 auto; /* center form  */
+}
+
+/* form labels */
+form label {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 35px;
+  color: #55362d;
+  font-weight: 600;
+}
+
+/* form input */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1.5px solid #4e3731;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #555; /* text colour for form elements */
+}
+
+/* submit button */
+form input[type="submit"] {
+  background-color: #583f38; /*  button background colour */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+/* hover effect for submit button */
+form input[type="submit"]:hover {
+  background-color: #b57355;
+}
+
+/*footer section*/
+#footer {
+  min-height: 100px;
+  background-color: #ecc0a5;
+  color: #444;
+  padding: 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

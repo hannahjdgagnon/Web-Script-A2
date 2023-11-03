@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!--head-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+
+
+  <body>
+    <% include partials/header.ejs %>
+    <% include partials/mainnav.ejs %>
+
+      <!-- projects section -->
+      <section id="projects">
+        <h2>Projects</h2>
+        <!-- first project -->
+        <div class="project">
+          <h3>Dream Job Research Assignment</h3>
+          <p>
+            This project was done in Writing and Critical Thinking. We spent
+            about half of the semester researching our dream jobs. We got to
+            break down those jobs into categories such as education
+            requirements, skill requirments, growth possibilities and much more!
+            If you are interested, feel free to take a look and my research on
+            UX Design, and what information I found!
+          </p>
+          <p>Here is an Introduction to the paper:</p>
+          <div class="project-image">
+            <img
+              id="projects-img1"
+              src="Assets/images/introUXscreenshot.png"
+              alt="introUXscreenshot"
+            />
+            <a href="files/dreamjobprojectpdf.pdf">Download a Copy</a>
+          </div>
+        </div>
+
+        <!-- second project-->
+        <div class="project">
+          <h3>Object Oriented Programming Final Project</h3>
+          <p>
+            This was the final project for Object Oriented Programming class in
+            Winter semester of 2023. For this project we were given a bunch of
+            different Ciphers to use in our code so that the user would be able
+            to encrypt and decrypt what they would type in.
+          </p>
+          <div class="project-image">
+            <img id="projects-img2" src="Assets/images/oopfinalprojectscreeshot.png" />
+            <a href="files/OOP-FinalProject.py">Download a Copy of the Code</a>
+          </div>
+        </div>
+      </section>
+
+    <% include partials/bottomnav.ejs %>
+    <% include partials/footer.ejs %>
+
+  </body>
+</html>

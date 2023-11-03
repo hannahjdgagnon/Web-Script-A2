@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <% include partials/header.ejs %>
+    <% include partials/mainnav.ejs %>
+
+      <!--contact form section-->
+      <section id="contact">
+        <h2>Contact Me</h2>
+        <!--mail to my email-->
+        <form action="mailto:hannah.gagnon@ontariotechu.net" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><!--take name-->
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+          /><!--take email-->
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+          /><!--take phone #-->
+
+          <label for="comments">Comments:</label>
+          <textarea id="comments" name="comments" rows="4" required></textarea
+          ><!--take any comments-->
+
+          <input type="submit" value="Submit" /><!--submit button-->
+        </form>
+      </section>        
+  
+    <% include partials/bottomnav.ejs %>
+    <% include partials/footer.ejs %>
+    
+  </body>
+</html>
